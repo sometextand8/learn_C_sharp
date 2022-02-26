@@ -51,15 +51,32 @@
 
 // ex_3
 
-Console.WriteLine("Enter a num and I'll display it is even num or not.");
-string a = Console.ReadLine();
-int num_1 = int.Parse(a);
+// Console.WriteLine("Enter a num and I'll display it is even num or not.");
+// string a = Console.ReadLine();
+// int num_1 = int.Parse(a);
 
-if (num_1 % 2 == 0)
+// if (num_1 % 2 == 0)
+// {
+//     Console.WriteLine($"{num_1} is even");
+// }
+// else
+// {
+//    Console.WriteLine($"{num_1} is not even"); 
+// }
+
+
+//ex_4
+
+Console.WriteLine("Enter a num: ");
+string a = Console.ReadLine();
+int N = int.Parse(a);
+int count = 1;
+
+while (count < N + 1)
 {
-    Console.WriteLine($"{num_1} is even");
-}
-else
-{
-   Console.WriteLine($"{num_1} is not even"); 
+    if (count % 2 == 0)
+    {
+        Console.Write(count);
+    }
+    count = count + 1;
 }
