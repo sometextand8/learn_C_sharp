@@ -20,30 +20,46 @@
 
 // ex 2
 
-Console.WriteLine("Enter three number and I display U the bigest.");
-Console.Write("Enter first number: ");
+// Console.WriteLine("Enter three number and I display U the bigest.");
+// Console.Write("Enter first number: ");
+// string a = Console.ReadLine();
+// int num_1 = int.Parse(a);
+
+// Console.Write("Enter second number: ");
+// string b = Console.ReadLine();
+// int num_2 = int.Parse(b);
+
+// Console.Write("Enter therd number: ");
+// string c = Console.ReadLine();
+// int num_3 = int.Parse(c);
+
+// if (num_1 > num_2 & num_1 > num_3)
+// {
+//     Console.WriteLine($"max num = {num_1}");
+// }
+
+// if (num_3 > num_1 & num_3 > num_2)
+// {
+//     Console.WriteLine($"max num = {num_3}");
+// }
+
+// if (num_2 > num_1 & num_2 > num_3)
+// {
+//     Console.WriteLine($"max num = {num_2}");
+// }
+
+
+// ex_3
+
+Console.WriteLine("Enter a num and I'll display it is even num or not.");
 string a = Console.ReadLine();
 int num_1 = int.Parse(a);
 
-Console.Write("Enter second number: ");
-string b = Console.ReadLine();
-int num_2 = int.Parse(b);
-
-Console.Write("Enter therd number: ");
-string c = Console.ReadLine();
-int num_3 = int.Parse(c);
-
-if (num_1 > num_2 & num_1 > num_3)
+if (num_1 % 2 == 0)
 {
-    Console.WriteLine($"max num = {num_1}");
+    Console.WriteLine($"{num_1} is even");
 }
-
-if (num_3 > num_1 & num_3 > num_2)
+else
 {
-    Console.WriteLine($"max num = {num_3}");
-}
-
-if (num_2 > num_1 & num_2 > num_3)
-{
-    Console.WriteLine($"max num = {num_2}");
+   Console.WriteLine($"{num_1} is not even"); 
 }
