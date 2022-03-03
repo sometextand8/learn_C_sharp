@@ -27,22 +27,23 @@ Console.Write(b);
 
 ex_3
 
-Console.WriteLine("Enter num A: ");
-string a = Console.ReadLine();
-int num_1 = int.Parse(a);
+Console.WriteLine("enetr num: ");
+string some = Console.ReadLine();
 
-Console.WriteLine("Enter num B: ");
-string b = Console.ReadLine();
-int num_2 = int.Parse(b);
+int len = some.Length;
+int min = 3;
 
-if (num_1 > num_2)
+if (len >= min)
 {
-    Console.WriteLine($"max number = {num_1}");
+    char ans = some[len - 1];
+    Console.WriteLine($"you enter - {some}, last digit - {ans}"); 
 }
+
 else
 {
-    Console.WriteLine($"max number = {num_2}");
+    Console.WriteLine("Третей цифры нет.");
 }
+
 
 ex_4
 
