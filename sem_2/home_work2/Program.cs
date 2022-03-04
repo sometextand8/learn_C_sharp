@@ -35,7 +35,7 @@ int min = 3;
 
 if (len >= min)
 {
-    char ans = some[len - 1];
+    char ans = some[2];
     Console.WriteLine($"you enter - {some}, last digit - {ans}"); 
 }
 
